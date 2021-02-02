@@ -40,7 +40,6 @@ struct Cardview_Previews: PreviewProvider {
     static var scrum = DailyScrum.data[0]
     static var previews: some View {
         Cardview(scrum: scrum)
-            .previewDevice("iPhone 12")
             .background(scrum.color)
             .previewLayout(.fixed(width: 400, height: 60))
     }

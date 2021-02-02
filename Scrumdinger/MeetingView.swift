@@ -21,8 +21,7 @@ struct MeetingView: View {
                 .fill(scrum.color)
             VStack {
                 MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, scrumColor: scrum.color)
-                Circle()
-                    .strokeBorder(lineWidth: 24, antialiased: true)
+                MeetingTimerView(speakers: scrumTimer.speakers, scrumColor: scrum.color)
                 MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
         }
@@ -47,6 +46,5 @@ struct MeetingView: View {
 struct MeetingView_Previews: PreviewProvider {
     static var previews: some View {
         MeetingView(scrum: .constant(DailyScrum.data[0]))
-            .previewDevice("iPhone 12")
     }
 }

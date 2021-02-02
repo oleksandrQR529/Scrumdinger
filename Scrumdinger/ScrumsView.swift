@@ -63,7 +63,6 @@ struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             ScrumsView(scrums: .constant(DailyScrum.data), saveAction: {})
-                .previewDevice("iPhone 12")
         }
     }
 }

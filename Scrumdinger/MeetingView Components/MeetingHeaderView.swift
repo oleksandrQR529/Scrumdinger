@@ -59,7 +59,6 @@ struct MeetingHeaderView: View {
 struct MeetingHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         MeetingHeaderView(secondsElapsed: 60, secondsRemaining: 180, scrumColor: DailyScrum.data[0].color)
-            .previewDevice("iPhone 12")
             .previewLayout(.sizeThatFits)
     }
 }

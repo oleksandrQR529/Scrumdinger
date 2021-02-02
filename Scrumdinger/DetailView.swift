@@ -81,7 +81,6 @@ struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             DetailView(scrum: .constant(DailyScrum.data[0]))
-                .previewDevice("iPhone 12")
         }
     }
 }
